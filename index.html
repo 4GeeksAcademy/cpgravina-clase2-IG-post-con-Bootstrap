@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Post</title>
+</head>
+<body>
+  <main>
+    <!--Main container-->
+    <div class="container-fluid">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0>
+              <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
+            </div>
+          <!-- Button trigger modal -->
+          <div class="d-flex">
+            <div>
+              <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#createNewPostModal">
+                Create a new post
+              </button>
+            </div>
+            <div class="dropdown m-1">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              <ul class="dropdown-menu fs-6">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><a class="dropdown-item border-top border-danger" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </div>  
+          </div>
+        </div>
+      </nav>
+      <!--Nav with centered icons-->
+      <nav>
+        <div class="nav justify-content-center border border-0" id="nav-tab" role="tablist">
+          <button class="nav-link text-body-secondary" id="grid-view-tab" data-bs-toggle="tab" data-bs-target="#grid-view" type="button" role="tab" aria-controls="grid-view" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+          <button class="nav-link text-body-secondary" id="list-view-tab" data-bs-toggle="tab" data-bs-target="#list-view" type="button" role="tab" aria-controls="list-view" aria-selected="false" ><i class="fa-solid fa-list"></i></button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <!--Grid view-->
+        <div class="tab-pane fade show active" id="grid-view" role="tabpanel" aria-labelledby="grid-view-tab" tabindex="0">
+          <!--Grid cards-->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card">
+                  <img src="images/dog.jpg" class="card-img-top" alt="dog-barking">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/people.jpg" class="card-img-top" alt="people-smiling">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/beach-city.jpg" class="card-img-top" alt="beach-city">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/women-smiling.jpg" class="card-img-top" alt="women-smiling">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/eiffel-tower.jpg" class="card-img-top" alt="eiffel-tower">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/gol.jpg" class="card-img-top" alt="gol">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/family.jpg" class="card-img-top" alt="family">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/code.jpg" class="card-img-top" alt="code-block">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/students.jpg" class="card-img-top" alt="group-of-students">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--List view-->
+        <div class="tab-pane fade" id="list-view" role="tabpanel" aria-labelledby="list-view-tab" tabindex="0">
+          <!--List cards-->
+          <div class="container d-flex justify-content-center">
+            <div class="row row-cols-1 grid gap-0 row-gap-3" style="width: 50rem;">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-sm-between bg-white">
+                    <div>
+                      <h4>My crazy dog Spark!</h4>
+                    </div>
+                    <div>
+                      <p>08/26</p>
+                    </div>
+                  </div>
+                  <img src="images/dog.jpg" class="card-img" alt="dog-barking">
+                  <div class="card-body">
+                    <p class="card-text"><strong>204 likes</strong><br>This is an example of a a very good photo that you can post on Instagram.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-sm-between bg-white">
+                    <div>
+                      <h4>The greatness of Croatia</h4>
+                    </div>
+                    <div>
+                      <p>08/27</p>
+                    </div>
+                  </div>
+                  <img src="images/beach-city.jpg" class="card-img" alt="beach-city">
+                  <div class="card-body">
+                    <p class="card-text"><strong>408 likes</strong><br>This is an example of a a very good photo that you can post on Instagram.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-sm-between bg-white">
+                    <div>
+                      <h4>Amazing gol by Cristiano</h4>
+                    </div>
+                    <div>
+                      <p>8/28</p>
+                    </div>
+                  </div>
+                  <img src="images/gol.jpg" class="card-img" alt="gol">
+                  <div class="card-body">
+                    <p class="card-text"><strong>302 likes</strong><br>This is an example of a a very good photo that you can post on Instagram.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-sm-between bg-white">
+                    <div>
+                      <h4>Another picture</h4>
+                    </div>
+                    <div>
+                      <p>8/29</p>
+                    </div>
+                  </div>
+                  <img src="images/people.jpg" class="card-img" alt="people">
+                  <div class="card-body">
+                    <p class="card-text"><strong>204 likes</strong><br>This is an example of a a very good photo that you can post on Instagram.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-sm-between bg-white">
+                    <div>
+                      <h4>Another picture</h4>
+                    </div>
+                    <div>
+                      <p>8/30</p>
+                    </div>
+                  </div>
+                  <img src="images/women-smiling.jpg" class="card-img" alt="women-smiling">
+                  <div class="card-body">
+                    <p class="card-text"><strong>204 likes</strong><br>This is an example of a a very good photo that you can post on Instagram.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-sm-between bg-white">
+                    <div>
+                      <h4>Another picture</h4>
+                    </div>
+                    <div>
+                      <p>8/31</p>
+                    </div>
+                  </div>
+                  <img src="images/eiffel-tower.jpg" class="card-img" alt="eiffel-tower">
+                  <div class="card-body">
+                    <p class="card-text"><strong>204 likes</strong><br>This is an example of a a very good photo that you can post on Instagram.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                    
+        </div>                  
+      </div>
+      </div>  
+    </div>
+  </main>
+  <!--Modal-->
+  <div class="modal" tabindex="-1" id="createNewPostModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Caption :</p>
+          <textarea class="w-100"></textarea>
+          <i class="fa-solid fa-camera"></i>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

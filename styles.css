@@ -1,0 +1,15 @@
+#grid-view-tab:hover {
+  color: blue !important;
+}
+
+#grid-view-tab:active {
+  color: blue !important;
+}
+
+#list-view-tab:hover {
+  color: blue !important;
+}
+
+#list-view-tab:active {
+  color: blue !important;
+}
