@@ -10,29 +10,25 @@
 </head>
 <body>
   <main>
-    <!--Main container-->
-    <div class="container-fluid">
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0>
-              <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
-            </div>
-          <!-- Button trigger modal -->
-          <div class="d-flex">
-            <div>
-              <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#createNewPostModal">
-                Create a new post
-              </button>
-            </div>
+    <!---New navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
+        </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#createNewPostModal">
+              Create a new post
+            </button>
             <div class="dropdown m-1">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-gear"></i>
-              <ul class="dropdown-menu fs-6">
+              <ul class="dropdown-menu fs-6 dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Accessibility</a></li>
                 <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
@@ -42,7 +38,11 @@
           </div>  
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!---End of New navbar-->
+     <!--Main container-->
+    <div class="container">
       <!--Nav with centered icons-->
       <nav>
         <div class="nav justify-content-center border border-0" id="nav-tab" role="tablist">
@@ -116,7 +116,7 @@
                       <h4>My crazy dog Spark!</h4>
                     </div>
                     <div>
-                      <p>08/26</p>
+                      <p class="date">08/26</p>
                     </div>
                   </div>
                   <img src="images/dog.jpg" class="card-img" alt="dog-barking">
@@ -132,7 +132,7 @@
                       <h4>The greatness of Croatia</h4>
                     </div>
                     <div>
-                      <p>08/27</p>
+                      <p class="date">08/27</p>
                     </div>
                   </div>
                   <img src="images/beach-city.jpg" class="card-img" alt="beach-city">
@@ -148,7 +148,7 @@
                       <h4>Amazing gol by Cristiano</h4>
                     </div>
                     <div>
-                      <p>8/28</p>
+                      <p class="date">8/28</p>
                     </div>
                   </div>
                   <img src="images/gol.jpg" class="card-img" alt="gol">
@@ -164,7 +164,7 @@
                       <h4>Another picture</h4>
                     </div>
                     <div>
-                      <p>8/29</p>
+                      <p class="date">8/29</p>
                     </div>
                   </div>
                   <img src="images/people.jpg" class="card-img" alt="people">
@@ -180,7 +180,7 @@
                       <h4>Another picture</h4>
                     </div>
                     <div>
-                      <p>8/30</p>
+                      <p class="date">8/30</p>
                     </div>
                   </div>
                   <img src="images/women-smiling.jpg" class="card-img" alt="women-smiling">
@@ -196,7 +196,7 @@
                       <h4>Another picture</h4>
                     </div>
                     <div>
-                      <p>8/31</p>
+                      <p class="date">8/31</p>
                     </div>
                   </div>
                   <img src="images/eiffel-tower.jpg" class="card-img" alt="eiffel-tower">

@@ -13,3 +13,9 @@
 #list-view-tab:active {
   color: blue !important;
 }
+
+@media (max-width: 570px) {
+  .date {
+      display:none;
+  }
+}
